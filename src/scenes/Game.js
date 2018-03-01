@@ -3,7 +3,7 @@ import Phaser from 'phaser';
 
 import Mushroom from '../sprites/Mushroom';
 
-export default class extends Phaser.Scene {
+class GameScene extends Phaser.Scene {
   constructor () {
     super({ key: 'GameScene' });
   }
@@ -25,3 +25,5 @@ export default class extends Phaser.Scene {
     });
   }
 }
+
+export default GameScene;

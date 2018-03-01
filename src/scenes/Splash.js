@@ -1,6 +1,6 @@
 import Phaser from 'phaser';
 
-export default class extends Phaser.Scene {
+class SplashScene extends Phaser.Scene {
   constructor () {
     super({ key: 'SplashScene' });
   }
@@ -9,13 +9,14 @@ export default class extends Phaser.Scene {
     //
     // load your assets
     //
-    this.load.image('mushroom', 'assets/images/mushroom2.png');
+    // this.load.image('mushroom', 'assets/images/mushroom2.png');
   }
 
   create () {
-    // this.scene.start('GameScene')
-    console.log(this.load.state);
+    this.scene.start('GameScene');
   }
 
   update () {}
 }
+
+export default SplashScene;
